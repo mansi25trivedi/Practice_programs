@@ -1,0 +1,25 @@
+# Code::Blocks workspace and user layout files
+*.layout
+*.depend
+
+# Code::Blocks build folders
+bin/
+obj/
+
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled Executables
+*.exe
+*.out
+*.app
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# OS generated files (optional but good practice)
+.DS_Store
+Thumbs.db

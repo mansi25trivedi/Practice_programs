@@ -61,4 +61,16 @@ int main(){
         cout<<"sum is greater than product of the digits of number";
     }else{
     cout<<"product is greater than sum of the digits";}
+
+    //check if the three numbers are in AP and in GP
+    int a1,a2,a3;
+    cout<<"enter the 3 numbers which you want to check : ";
+    cin>>a1>>a2>>a3;
+    if(a2-a1 == a3-a2){
+        cout<<"sequence in AP"<<endl;
+    }else if(a2/a1 == a3/a2){
+    cout<<"sequence in GP"<<endl;
+    }else{
+        cout<<"sequence neither in AP nor in GP"<<endl;
+    }
 }

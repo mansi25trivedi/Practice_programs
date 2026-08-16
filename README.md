@@ -5,7 +5,16 @@ Each file will contain 2-10 questions on programming and each would have a topic
 Hope you find this helpful :).
 
 fie name     :  Qustions attempted
-leapyr.cpp   :  Check if the given year is a leap year or not 
+leapyr.cpp   :  Check if the given year is a leap year or not
 cpp2.cpp     :  1. Check if the given character is a vowel or a consonant
-                2. check if the number given is 1 digit , 2 digit or a  multi digit number 
-                3. take any interger and check if the sum ofdigits is greater than product of digits 
+2. check if the number given is 1 digit , 2 digit or a  multi digit number
+3. take any interger and check if the sum of digits is greater than product of digits
+4. findif the given sequence is an AP or a GP
+
+
+
+loops.cpp    : 1. Reverse a number
+               2. Check if the given number is a palindrome
+
+&#x20;              3. Check if the given number is an Armstrong number
+

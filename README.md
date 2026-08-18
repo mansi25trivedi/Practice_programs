@@ -14,7 +14,8 @@ cpp2.cpp     :  1. Check if the given character is a vowel or a consonant
 
 
 loops.cpp    : 1. Reverse a number
-               2. Check if the given number is a palindrome
+2. Check if the given number is a palindrome
 
 &#x20;              3. Check if the given number is an Armstrong number
+4. n terms Fibonnacii seriesand their sum
 

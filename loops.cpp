@@ -55,6 +55,23 @@ int main(){
     cout<<"the given number is not an Armstrong number";
     }
 
+    //Print Fibonacci series up to n terms.
+    int n3;
+    cout<<"enter the number till which you want to display fib num";
+    cin>>n3;
+    int l = 0;
+    int p = 1;
+    int sum = 0 + 1;
+    cout<<l<<" "<<p<<" ";
+    for(int i = 3 ; i <= n3 ; i++){
+    int a = l+p;
+    sum+=a;
+    cout<<a<<" ";
+    l= p;
+    p= a;
+}
+cout<<endl<<"the sum of Fibonacci series is: "<<sum<<endl;
+
 
     return 0;
 }

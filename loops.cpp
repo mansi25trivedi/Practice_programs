@@ -72,6 +72,23 @@ int main(){
 }
 cout<<endl<<"the sum of Fibonacci series is: "<<sum<<endl;
 
+// to print first n terms of an AP
+int a1, d ,n4;
+cout<<"enter the first element and the common difference of an AP: ";
+cin>>a1>>d;
+cout<<"enter the number of elements you want to print of AP:";
+cin>>n;
+for(int i = 0 ; i <n ; i++){
+    cout<<a1 + i*d<<" ";
+}
+int r;
+cout<<"enter the common multiple(r) for the GP: ";
+cin>>r;
+for(int i=1 ; i <=n ; i++){
+    cout<<a1<<" ";
+    a1*=r;
+}
+
 
     return 0;
 }

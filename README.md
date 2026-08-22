@@ -17,5 +17,8 @@ loops.cpp    : 1. Reverse a number
 2. Check if the given number is a palindrome
 
 &#x20;              3. Check if the given number is an Armstrong number
-4. n terms Fibonnacii seriesand their sum
+4. n terms Fibonnacii series and their sum
+5. give the AP and GP
+
+6\. Print all factors of a given number., sum of the factors and if it is a strong number or not (sum of factors is equal to the number itself"
 

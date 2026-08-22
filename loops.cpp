@@ -89,6 +89,26 @@ for(int i=1 ; i <=n ; i++){
     a1*=r;
 }
 
+cout<<endl<<"Print all factors of a given number. "<<endl;
+cout<<"enter the number you want to check: ";
+int n5;
+cin>>n5;
+cout<<endl<<"the factors of "<<n5<<" are: ";
+int sum1 = 0;
+for(int i = 1 ; i <=n5 ; i++){
+    if(n5%i == 0){
+        cout<<i<<" ";
+        sum1 += i;
+    }
+}
+cout<<endl<<"the sum of factors of "<<n5<<"is : "<<sum1<<endl;
+if(sum1 == n5){
+    cout<<endl<<"the given number is a strong number(sum of factors is equal to the num)"<<endl;
+}else{
+    cout<<"the given number is not a strong number"<<endl;
+}
+
+
 
     return 0;
 }

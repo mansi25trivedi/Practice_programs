@@ -108,6 +108,11 @@ if(sum1 == n5){
     cout<<"the given number is not a strong number"<<endl;
 }
 
+//Find LCM of two numbers using loops.
+int n6 , n7;
+cout<<"enter the numbers of whichyou want to calculate the LCM: ";
+cin>>n6>>n7;
+
 
 
     return 0;

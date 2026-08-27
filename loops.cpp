@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cmath>
+#include<numeric>
 using namespace std;
 int main(){
     //Print the reverse of a given number
@@ -110,8 +111,13 @@ if(sum1 == n5){
 
 //Find LCM of two numbers using loops.
 int n6 , n7;
-cout<<"enter the numbers of whichyou want to calculate the LCM: ";
+cout<<"enter the numbers of which you want to calculate the LCM: ";
 cin>>n6>>n7;
+int lcm = max(n6 , n7);//lcm=least positive no which is divisible by both,let us take the largest no amongt as the lcm ,which will be divisible by a,b
+while(lcm%n6 !=0 || lcm%n7 !=0 )lcm++;
+
+cout<<"the lcm of "<<n6<<" and "<<n7<<" is : "<<lcm;
+//cout<<endl<<"anothr way is to use the in built function of lcm() in the numeric header file"<<lcm(n6, n7)<<endl;
 
 
 

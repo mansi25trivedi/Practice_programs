@@ -120,6 +120,21 @@ cout<<"the lcm of "<<n6<<" and "<<n7<<" is : "<<lcm;
 //cout<<endl<<"anothr way is to use the in built function of lcm() in the numeric header file"<<lcm(n6, n7)<<endl;
 
 
+//find hcf oftwo numbersusig loops
+int n8, n9;
+cout<<"enter the two numbers : ";
+cin>>n8>>n9;
+int hcf;
+if(n8 == 0 || n9 ==0){
 
+    hcf = 0;
+}
+else{
+    hcf = min(n8 , n9);
+    while(n8%hcf != 0 || n9 != 0){
+        hcf--;
+    }
+}
+cout<<endl<<"hcf is : "<<hcf;
     return 0;
 }

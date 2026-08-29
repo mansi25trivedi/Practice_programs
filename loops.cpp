@@ -131,10 +131,32 @@ if(n8 == 0 || n9 ==0){
 }
 else{
     hcf = min(n8 , n9);
-    while(n8%hcf != 0 || n9 != 0){
+    while(n8%hcf != 0 && n9 != 0){
         hcf--;
     }
 }
 cout<<endl<<"hcf is : "<<hcf;
+
+//print all numbers that are palindromes between 1-500
+cout<<endl<<"print all the numbers thaat are palindromes between 1-500"<<endl;
+for (int i = 1; i <= 500; i++) {
+        int original = i;
+        int reversed = 0;
+        int temp = original;
+
+        // Reverse the digits of the current number
+        while (temp != 0) {
+            int remainder = temp % 10;
+            reversed = reversed * 10 + remainder;
+            temp = temp / 10;
+        }
+
+        // If the original number is exactly the same as it is backwards, it's a palindrome
+        if (original == reversed) {
+            cout << original << " ";
+        }
+    }
+
+    cout << endl;
     return 0;
 }

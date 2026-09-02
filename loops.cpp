@@ -157,6 +157,23 @@ for (int i = 1; i <= 500; i++) {
         }
     }
 
+    //Print all numbers from 1–n whose binary representation has an even number of 1s.
+    int n10;
+    cout<<"enter the no till which we will check of even no of 1's in binary representation : " ;
+    cin>>n10;
+    for(int i = 1 ; i <= n10 ; i++){
+        int count = 0 ;
+        while(n10 > 0){
+            n10 = n10 & ( n10 -1);
+            count++;
+        }
+        if(count % 2 == 0){
+            cout<< i<< " ";
+        }
+    }
+
+
+
     cout << endl;
     return 0;
 }

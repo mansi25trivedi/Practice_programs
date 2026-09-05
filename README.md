@@ -21,5 +21,13 @@ loops.cpp    : 1. Reverse a number
 5. give the AP and GP
 
 6\. Print all factors of a given number., sum of the factors and if it is a strong number or not (sum of factors is equal to the number itself"
-9. Print all numbers from 1–n whose binary representation has an even number of 1s. 
+9. Print all numbers from 1–n whose binary representation has an even number of 1s.
+
+
+
+recursion.cpp  :  1. print the even numbers only recursively
+
+&#x20;                 2. Calculate power of a number (xⁿ) using recursion.
+
+&#x20;                 3. Find nth Fibonacci number recursively
 

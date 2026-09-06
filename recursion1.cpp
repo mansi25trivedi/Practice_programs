@@ -33,6 +33,17 @@ int nthfibbonum(int n){
     }
     return nthfibbonum(n-2) + nthfibbonum(n-1);
 }
+void printfibbo(int n){
+    if(n == 0){
+        cout<< 0;
+        return ;
+    }
+    if(n==1){
+            cout<<" "<<1;
+        return;
+    }
+    printfibbo(n-2) + printfibbo(n-1);
+}
 int main(){
     cout<<" Print only even numbers from 1 to n recursively"<<endl;
     int n;
@@ -45,4 +56,6 @@ int main(){
     cin>>p1;
     cout<<endl<<powr(n, p1);
     cout<<endl<<"Find nth Fibonacci number recursively : "<<nthfibbonum(n);
+    cout<<endl<<"Print Fibonacci series up to n terms recursively."<<endl;
+    printfibbo(n);
 }

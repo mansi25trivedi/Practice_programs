@@ -33,16 +33,12 @@ int nthfibbonum(int n){
     }
     return nthfibbonum(n-2) + nthfibbonum(n-1);
 }
-void printfibbo(int n){
+void printfibbo(int n, int a = 0 , int b = 1){
     if(n == 0){
-        cout<< 0;
         return ;
     }
-    if(n==1){
-            cout<<" "<<1;
-        return;
-    }
-    printfibbo(n-2) + printfibbo(n-1);
+    cout<<a<<" ";
+    printfibbo(n-1, b, a+b);
 }
 int main(){
     cout<<" Print only even numbers from 1 to n recursively"<<endl;

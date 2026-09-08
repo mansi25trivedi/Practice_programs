@@ -40,6 +40,16 @@ void printfibbo(int n, int a = 0 , int b = 1){
     cout<<a<<" ";
     printfibbo(n-1, b, a+b);
 }
+
+int reverseint(int n){
+    int r = 0;
+    while(n!=0){
+        r = r*10 + n%10;
+        n=n/10;
+
+    }
+    return r;
+}
 int main(){
     cout<<" Print only even numbers from 1 to n recursively"<<endl;
     int n;
@@ -54,4 +64,5 @@ int main(){
     cout<<endl<<"Find nth Fibonacci number recursively : "<<nthfibbonum(n);
     cout<<endl<<"Print Fibonacci series up to n terms recursively."<<endl;
     printfibbo(n);
+    cout<<endl<<"Reverse a number recursively : "<<reverseint(n)<<endl;
 }

@@ -50,6 +50,12 @@ int reverseint(int n){
     }
     return r;
 }
+int gcd(int a, int b){
+    if(b==0){
+        return a;
+    }
+    return gcd(b , a%b);
+}
 int main(){
     cout<<" Print only even numbers from 1 to n recursively"<<endl;
     int n;
@@ -65,4 +71,9 @@ int main(){
     cout<<endl<<"Print Fibonacci series up to n terms recursively."<<endl;
     printfibbo(n);
     cout<<endl<<"Reverse a number recursively : "<<reverseint(n)<<endl;
+    cout<<endl<<" Find GCD (HCF) of two numbers using Euclid’s algorithm recursively. "<<endl;
+    int n1 , n2;
+    cout<<"enter the 2 numbers ";
+    cin>>n1>>n2;
+    cout<<"GCD is: "<<gcd(n1,n2)<<endl;
 }

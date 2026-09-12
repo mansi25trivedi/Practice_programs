@@ -56,6 +56,17 @@ int gcd(int a, int b){
     }
     return gcd(b , a%b);
 }
+const string words[] = {"zero", "one", "two", "three", "four",
+                        "five", "six", "seven", "eight", "nine"};
+
+void printDigitsRecursive(int n) {
+    if (n == 0) {
+        return;
+    }
+    printDigitsRecursive(n / 10);
+
+    cout << words[n % 10] << " ";
+}
 int main(){
     cout<<" Print only even numbers from 1 to n recursively"<<endl;
     int n;
@@ -76,4 +87,7 @@ int main(){
     cout<<"enter the 2 numbers ";
     cin>>n1>>n2;
     cout<<"GCD is: "<<gcd(n1,n2)<<endl;
+    cout<<"Print digits of a number in words recursively (e.g., 123 → “one two three”). "<<endl<<n<<" as " ;
+    printDigitsRecursive(n);
+
 }

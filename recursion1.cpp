@@ -67,6 +67,16 @@ void printDigitsRecursive(int n) {
 
     cout << words[n % 10] << " ";
 }
+int nCr(int n , int r){
+    if(r>n){
+        return 0;
+    }
+    if(r== 0 || r == n){
+            return 1;
+
+    }
+    return nCr(n-1, r-1) + nCr(n-1, r);
+}
 int main(){
     cout<<" Print only even numbers from 1 to n recursively"<<endl;
     int n;
@@ -89,5 +99,6 @@ int main(){
     cout<<"GCD is: "<<gcd(n1,n2)<<endl;
     cout<<"Print digits of a number in words recursively (e.g., 123 → “one two three”). "<<endl<<n<<" as " ;
     printDigitsRecursive(n);
+    cout<<endl<<" Find nCr (Combination formula) recursively using Pascal’s relation. : n1Cn2 : "<<nCr(n1, n2)<<endl;
 
 }

@@ -77,6 +77,16 @@ int nCr(int n , int r){
     }
     return nCr(n-1, r-1) + nCr(n-1, r);
 }
+void reverse_triangle(int n){
+    if(n==0){
+        return;
+    }
+    for(int i=0; i<n ; i++){
+        cout<<"* ";
+    }
+    cout<<endl;
+    reverse_triangle(n-1);
+}
 int main(){
     cout<<" Print only even numbers from 1 to n recursively"<<endl;
     int n;
@@ -100,5 +110,7 @@ int main(){
     cout<<"Print digits of a number in words recursively (e.g., 123 → “one two three”). "<<endl<<n<<" as " ;
     printDigitsRecursive(n);
     cout<<endl<<" Find nCr (Combination formula) recursively using Pascal’s relation. : n1Cn2 : "<<nCr(n1, n2)<<endl;
+    cout<<"Print reverse triangle pattern recursively"<<endl;
+    reverse_triangle(n);
 
 }

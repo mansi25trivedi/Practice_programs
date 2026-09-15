@@ -37,4 +37,5 @@ recursion.cpp  :  1. print the even numbers only recursively
                        7.Print digits of a number in words recursively (e.g., 123 → “one two three”).
                        8. Find nCr (Combination formula) recursively using Pascal’s relation. 
                        9.Print reverse triangle pattern recursively
+                       10. Print numbers in increasing and decreasing order in same function. 
 

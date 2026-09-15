@@ -87,6 +87,15 @@ void reverse_triangle(int n){
     cout<<endl;
     reverse_triangle(n-1);
 }
+void print_inc_dec(int curr, int maxnum){
+    if(curr>maxnum){
+        return;
+    }
+    cout<<curr<<" ";
+    print_inc_dec(curr+1 , maxnum);
+    cout<<curr<<" ";
+
+}
 int main(){
     cout<<" Print only even numbers from 1 to n recursively"<<endl;
     int n;
@@ -112,5 +121,14 @@ int main(){
     cout<<endl<<" Find nCr (Combination formula) recursively using Pascal’s relation. : n1Cn2 : "<<nCr(n1, n2)<<endl;
     cout<<"Print reverse triangle pattern recursively"<<endl;
     reverse_triangle(n);
+    cout<<endl<<"Print numbers in increasing and decreasing order in same function. "<<endl<<" like 12344321"<<endl;
+    int curr, maxnum;
+    cout<<"give the current num: ";
+    cin>>curr;
+    cout<<"enter the max num: ";
+    cin>>maxnum;
+    print_inc_dec(curr, maxnum);
+
+
 
 }

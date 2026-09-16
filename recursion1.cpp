@@ -96,6 +96,7 @@ void print_inc_dec(int curr, int maxnum){
     cout<<curr<<" ";
 
 }
+
 int main(){
     cout<<" Print only even numbers from 1 to n recursively"<<endl;
     int n;
@@ -128,6 +129,8 @@ int main(){
     cout<<"enter the max num: ";
     cin>>maxnum;
     print_inc_dec(curr, maxnum);
+    cout<<endl<<" Print pattern of characters (A, AB, ABC, ...) recursively. "<<endl;
+
 
 
 

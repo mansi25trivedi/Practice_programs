@@ -38,4 +38,10 @@ recursion.cpp  :  1. print the even numbers only recursively
                        8. Find nCr (Combination formula) recursively using Pascal’s relation. 
                        9.Print reverse triangle pattern recursively
                        10. Print numbers in increasing and decreasing order in same function. 
+arr.cpp   : 1. Print the number of positive , negetive and zero in the array
+            2. largest/maximum element
+            3. smallest element
+            4. second largest element
+            5. index of smallest and largest element
+            6.Input an element x — check if it exists in the array. 
 

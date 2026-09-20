@@ -71,6 +71,15 @@ cout<<endl<<"Count of positive elements is: "<<p;
         }
     }
 
+    cout<<endl<<"Count how many times a given element appears: element is = "<<x;
+    int c1= 0;
+    for(int i=0 ; i<n ; i++){
+        if(arr[i]==x){
+            c1++;
+        }
+    }
+    cout<<endl<<"the number of times the element "<<x<<" appears is : "<<c1<<endl;
+
 return 0;
 }
 

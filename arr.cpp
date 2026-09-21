@@ -80,6 +80,16 @@ cout<<endl<<"Count of positive elements is: "<<p;
     }
     cout<<endl<<"the number of times the element "<<x<<" appears is : "<<c1<<endl;
 
+    cout<<"Find the first occurrence of a given number. x : "<<x<<endl;
+    int first_occurrence ;
+    for(int i=0; i<n ; i++){
+        if(arr[i] == x){
+            first_occurrence = i;
+            break;
+        }
+    }
+    cout<<"The first occurrence of the given number "<<x<<" is at index : "<<first_occurrence<<endl;
+
 return 0;
 }
 

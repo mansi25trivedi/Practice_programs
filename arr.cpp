@@ -89,6 +89,16 @@ cout<<endl<<"Count of positive elements is: "<<p;
         }
     }
     cout<<"The first occurrence of the given number "<<x<<" is at index : "<<first_occurrence<<endl;
+//Find the last occurrence of a given number.
+int last_occurrence = -1;
+for(int i = n-1 ; i>=0 ; i--){
+    if(arr[i] == x){
+        last_occurrence = i;
+        break;
+    }
+}
+cout<<endl<<"Find the last occurrence of a given number. "<<x<<" is at index "<<last_occurrence;
+        cout<<endl;
 
 return 0;
 }

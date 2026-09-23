@@ -100,6 +100,15 @@ for(int i = n-1 ; i>=0 ; i--){
 cout<<endl<<"Find the last occurrence of a given number. "<<x<<" is at index "<<last_occurrence;
         cout<<endl;
 
+        //Find the sum of even elements only.
+        int evensum = 0;
+        for(int i = 0 ; i<n ; i++){
+            if(arr[i]%2 == 0){
+                evensum += arr[i];
+            }
+        }
+        cout<<endl<<"Sum of even elements only. : "<<evensum<<endl;
+
 return 0;
 }
 

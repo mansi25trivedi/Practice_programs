@@ -48,4 +48,5 @@ arr.cpp   : 1. Print the number of positive , negetive and zero in the array
             8.Find the first occurrence of a given number.
             9. Find the last occurrence of a given number. 
             10.Find the sum of even elements only. 
+            11. Check if all elements in an array are unique. 
 

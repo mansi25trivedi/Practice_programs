@@ -109,6 +109,18 @@ cout<<endl<<"Find the last occurrence of a given number. "<<x<<" is at index "<<
         }
         cout<<endl<<"Sum of even elements only. : "<<evensum<<endl;
 
+//Check if all elements in an array are unique.
+cout<<endl<<"Check if all elements in an array are unique. : ";
+bool f = true;
+for(int i = 0 ; i < n ; i ++){
+    for(int j = i+1 ; j<n ; j++){
+        if(arr[i] == arr[j]){
+            f = false;
+        }
+    }
+}
+cout<< " "<<f<<endl;
+
 return 0;
 }
 

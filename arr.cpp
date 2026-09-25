@@ -120,6 +120,14 @@ for(int i = 0 ; i < n ; i ++){
     }
 }
 cout<< " "<<f<<endl;
+//Count how many numbers are divisible by 3 and 5 both.
+int c2 = 0;
+for(int i = 0 ; i < n ; i++){
+    if(arr[i] % 3==0 && arr[i] % 5 == 0){
+        c2++;
+    }
+}
+cout<<endl<<"Count how many numbers are divisible by 3 and 5 both. : " <<c2<<endl;
 
 return 0;
 }

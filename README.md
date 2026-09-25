@@ -49,4 +49,5 @@ arr.cpp   : 1. Print the number of positive , negetive and zero in the array
             9. Find the last occurrence of a given number. 
             10.Find the sum of even elements only. 
             11. Check if all elements in an array are unique. 
+            12. Count how many numbers are divisible by 3 and 5 both. 
 

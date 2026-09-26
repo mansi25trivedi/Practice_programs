@@ -129,6 +129,24 @@ for(int i = 0 ; i < n ; i++){
 }
 cout<<endl<<"Count how many numbers are divisible by 3 and 5 both. : " <<c2<<endl;
 
+// Find the count of prime numbers in the array.
+int c3 = 0;
+for(int i = 0 ; i < n ; i ++){
+        int is_prime = 1;
+        if(arr[i] == 0 || arr[i]== 1){
+            is_prime = 1;
+        }
+        for(int j = 2 ; j < arr[i] ; j++){
+            if(arr[i]%j == 0){
+                is_prime = 0;
+                break;
+            }
+        }
+        if(is_prime){
+            c3++;
+        }
+}
+cout<<"count of prime numbers in the array." <<c3;
 return 0;
 }
 

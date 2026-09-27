@@ -146,7 +146,22 @@ for(int i = 0 ; i < n ; i ++){
             c3++;
         }
 }
-cout<<"count of prime numbers in the array." <<c3;
+cout<<"count of prime numbers in the array." <<c3<<endl;
+
+//Count how many elements are perfect squares.
+int c4 = 0;
+for(int i = 0 ; i < n ; i ++){
+    int is_square = 0;
+    for(int j=0 ; j <= arr[i] ; j++ ){
+        if(j*j == arr[i]){
+            is_square = 1;
+        }
+    }
+    if(is_square){
+        c4++;
+    }
+}
+cout<<"The number of elements which are perfect squares are : "<<c4<<endl;
 return 0;
 }
 

@@ -18,4 +18,15 @@ int main(){
         }
        cout<<arr[i]<<" ";
     }
+    cout<<endl;
+
+
+    //Swap the first and last elements of the array
+    int temp;
+    temp = arr[0];
+    arr[0]= arr[n-1];
+    arr[n-1] = temp;
+     for(int i = 0 ; i < n ; i++){
+        cout<<arr[i]<<" ";
+    }
 }

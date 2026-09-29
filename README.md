@@ -53,3 +53,6 @@ arr.cpp   : 1. Print the number of positive , negetive and zero in the array
             13.  Find the count of prime numbers in the array.
             14. count the number of perfect squares in the array
 
+arr2.cpp : 1. 
+           2.Swap the first andlast element of the array 
+

@@ -29,4 +29,22 @@ int main(){
      for(int i = 0 ; i < n ; i++){
         cout<<arr[i]<<" ";
     }
+
+    //Reverse an array (without using built-in reverse)
+    cout<<endl<<"reverse the array: ";
+    for(int i=0;i<n;i++){
+  int j=n-1;
+  int temp= arr[i];
+arr[i] = arr[j];
+arr[j] = temp;
+}
+for(int i = 0 ; i  <n ; i++){
+    cout<<arr[i]<<" ";
+}
+
+// Copy one array to another manually.
+int arr_copy[n];
+for(int i = 0 ;  i < n ; i++){
+    arr_copy[i] = arr[i];
+}
 }

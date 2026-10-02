@@ -55,4 +55,6 @@ arr.cpp   : 1. Print the number of positive , negetive and zero in the array
 
 arr2.cpp : 1. 
            2.Swap the first andlast element of the array 
+           3.Reverse an array without using built in 
+           4.Rotate an array by one position to the left. 
 

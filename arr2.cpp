@@ -47,4 +47,11 @@ int arr_copy[n];
 for(int i = 0 ;  i < n ; i++){
     arr_copy[i] = arr[i];
 }
+
+//Rotate an array by one position to the left.
+int firstele = arr[0];
+for(int i = 1 ; i < n ; i++){
+    arr[i-1] = arr[i];
+}
+arr[n-1] = firstele;
 }

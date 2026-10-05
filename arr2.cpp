@@ -54,4 +54,38 @@ for(int i = 1 ; i < n ; i++){
     arr[i-1] = arr[i];
 }
 arr[n-1] = firstele;
+
+//Rotate an array by one position to the right.
+cout<<endl<<"Rotate an array by one position to the right.: "<<endl;
+int lastele = arr[n-1];
+for(int i = n-2 ;  i >=0 ; i--){
+    arr[i+1] = arr[i];
 }
+arr[0] = lastele;
+
+//Merge two arrays into a third array.
+cout<<endl<<"Merge two arrays into a third array. "<<endl;
+int arr1[n+n];
+for(int i = 0 ;  i < n+n ; i++){
+    for(int j = 0 ; j < n ; j++){
+        arr1[i] = arr[j];
+    }
+    for(int j = 0 ; j < n ; j++){
+        arr1[i] = arr_copy[j];
+    }
+}
+for(int i = 0 ; i < n+n ; i++){
+    cout<<arr1[i]<<" ";
+}
+
+//Swap alternate elements (1st ↔ 2nd, 3rd ↔ 4th, etc.).
+cout<<endl<<"Swap alternate elements (1st ↔ 2nd, 3rd ↔ 4th, etc.). "<<endl;
+for(int i = 0 ; i < n ; i++){
+    if(i %2 == 0){
+        swap(arr[i] , arr[i+1]);
+    }
+    cout<<arr[i]<<" ";
+}
+}
+
+

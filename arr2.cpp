@@ -86,6 +86,12 @@ for(int i = 0 ; i < n ; i++){
     }
     cout<<arr[i]<<" ";
 }
+
+//Find element-wise sum of two arrays (A[i] + B[i])
+cout<<endl<<"Find element-wise sum of two arrays (A[i] + B[i]) : " <<endl;
+for(int i = 0 ; i < n ; i++){
+    cout<<arr[i] + arr_copy[i]<<" ";
+}
 }
 
 

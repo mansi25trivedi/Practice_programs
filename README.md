@@ -57,4 +57,10 @@ arr2.cpp : 1.
            2.Swap the first andlast element of the array 
            3.Reverse an array without using built in 
            4.Rotate an array by one position to the left. 
+           5.Rotate an array by one position to the right.
+           6.Merge the 2 arrays into 1
+           7. Swap alternate elements (1st ↔ 2nd, 3rd ↔ 4th, etc.).
+           8. Find element-wise sum of two arrays (A[i] + B[i]) 
+           9. element-wise product of two arrays
+           10. Compare two arrays — check if they contain the same elements (ignore order). 
 

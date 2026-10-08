@@ -96,6 +96,25 @@ cout<<endl<<"element-wise product : ";
 for(int i = 0 ; i < n ; i++){
     cout<<arr[i] * arr_copy[i]<<" ";
 }
+
+cout<<endl<<"Compare two arrays — check if they contain the same elements (ignore order). "<<endl;
+int is_there = 0;
+for(int i = 0 ; i<n ; i++){
+        is_there = 0;
+    for(int j = 0 ; j < n ; j++){
+        if(arr[i] == arr_copy[j]){
+            is_there = 1;
+            break;
+        }
+    }
+    if(is_there == 0){
+        cout<<endl<<"not contain the same elements "<<endl;
+    }else{
+        continue;
+    }
+}
+cout<<endl<<"contains the same elements"<<endl;
+
 }
 
 

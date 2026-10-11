@@ -115,6 +115,75 @@ for(int i = 0 ; i<n ; i++){
 }
 cout<<endl<<"contains the same elements"<<endl;
 
+//Find the common elements between two arrays.
+cout<<endl<<"Find the common elements between two arrays."<<endl;
+for(int i = 0 ; i < n ; i++){
+        is_there  = 0;
+    for(int j = 0 ; j < n ; j++){
+        if(arr[i] == arr_copy[j]){
+            is_there = 1;
+            cout<<" Common element is : "<<arr[i];
+            break;
+        }
+    }
+}
+
+//Find elements that are in one array but not in the other.
+cout<<" Find elements that are in one array but not in the other. ";
+for(int i = 0 ; i<n ; i++){
+        is_there = 0;
+    for(int j = 0 ; j < n ; j++){
+        if(arr[i] == arr_copy[j]){
+            is_there = 1;
+            break;
+        }
+    }
+    if(is_there == 0){
+            cout<<endl<<arr[i]<<" not present ";
+        cout<<endl<<"not contain the same elements "<<endl;
+    }else{
+        continue;
+    }
+}
+
+//Create a frequency array of numbers (count occurrence of each number).
+cout<<endl<<"Create a frequency array of numbers (count occurrence of each number). : "<<endl;
+const int MAX_LIMIT = 1000;
+
+    // 2. Initialize the fixed-size array with zeros on the stack
+    int freq[MAX_LIMIT] = {0};
+
+    // 3. Count occurrences directly
+    for (int i = 0; i < n; i++) {
+        // Guard to prevent out-of-bounds memory access
+        if (arr[i] >= 0 && arr[i] < MAX_LIMIT) {
+            freq[arr[i]]++;
+        }
+    }
+
+    // 4. Find the actual max element just to optimize the printing loop
+    int max_val = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] > max_val) {
+            max_val = arr[i];
+        }
+    }
+
+    // 5. Output the results
+    for (int i = 0; i <= max_val; i++) {
+        if (freq[i] > 0) {
+            cout << "Number " << i << " occurs " << freq[i] << " times\n";
+        }
+    }
+
+    //Output ONLY elements with a frequency strictly greater than 1
+    cout << "Elements appearing more than once: ";
+    for (int i = 0; i <= max_val; i++) {
+        if (freq[i] > 1) {
+            cout << i << " ";
+        }
+    }
+
 }
 
 

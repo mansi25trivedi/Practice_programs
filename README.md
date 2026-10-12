@@ -63,4 +63,6 @@ arr2.cpp : 1.
            8. Find element-wise sum of two arrays (A[i] + B[i]) 
            9. element-wise product of two arrays
            10. Compare two arrays — check if they contain the same elements (ignore order). 
+           11. Find the common elements between two arrays.
+           12. Find the second smallest element in an array.
 

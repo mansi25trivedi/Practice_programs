@@ -184,6 +184,24 @@ const int MAX_LIMIT = 1000;
         }
     }
 
+    //Find the second smallest element in an array.
+    cout<<endl<<"Find the second smallest element in an array."<<endl;
+    int small2 , small1;
+    small1 = arr[0];
+    small2 = arr[0];
+    for(int i = 0 ; i < n ; i++){
+        if(arr[i] < small1){
+            small1 = arr[i];
+        }
+    }
+    for(int i = 0 ; i < n ; i++){
+        if(arr[i] < small2 && arr[i]>small1){
+            small2 = arr[i];
+        }
+    }
+    cout<<endl<<"smallest element is: "<<small1;
+    cout<<endl<<"2nd smallest element is :"<<small2;
+
 }
 
 

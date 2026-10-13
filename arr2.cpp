@@ -202,6 +202,21 @@ const int MAX_LIMIT = 1000;
     cout<<endl<<"smallest element is: "<<small1;
     cout<<endl<<"2nd smallest element is :"<<small2;
 
+    //Check if the array is sorted in ascending order.
+    cout<<endl<<"Check if the array is sorted in ascending order.: "<<endl;
+    int is_asc = 1;
+    for(int i = 0 ; i < n-1 ; i++){
+        if(arr[i] >arr[i+1]){
+            is_asc = 0;
+            break;
+        }
+    }
+    if(is_asc){
+        cout<<endl<<"the array is sorted in asending order "<<endl;
+    }else{
+        cout<<endl<<"array is not sorted in ascending order "<<endl;
+    }
+
 }
 
 

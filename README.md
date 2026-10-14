@@ -66,4 +66,5 @@ arr2.cpp : 1.
            11. Find the common elements between two arrays.
            12. Find the second smallest element in an array.
            13. Check if the array is sorted in ascending order.
+           14. Check if the array is sorted in descending order. 
 

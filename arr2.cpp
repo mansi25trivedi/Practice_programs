@@ -217,6 +217,21 @@ const int MAX_LIMIT = 1000;
         cout<<endl<<"array is not sorted in ascending order "<<endl;
     }
 
+    //Check if the array is sorted in descending order.
+    cout<<endl<<"Check if the array is sorted in descending order. :"<<endl;
+    int is_dec = 1;
+    for(int i = 1 ; i < n ; i++){
+        if(arr[i]<arr[i-1]){
+            is_dec = 0;
+            break;
+        }
+    }
+    if(is_dec){
+        cout<<endl<<"array is sorted in decending order "<<endl;
+    }else{
+        cout<<endl<<"array is not sorted in descending order "<<endl;
+    }
+
 }
 
 

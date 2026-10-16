@@ -232,6 +232,16 @@ const int MAX_LIMIT = 1000;
         cout<<endl<<"array is not sorted in descending order "<<endl;
     }
 
+    //Find the sum of all elements except the largest and smallest.
+    cout<<"sum of all elements except the largest and smallest. : ";
+    int sum_exp_max_min = 0 ;
+    for(int i = 0 ; i < n ; i++){
+        if(arr[i] != max_val || arr[i] != small1){
+            sum_exp_max_min += arr[i];
+        }
+    }
+    cout<<sum_exp_max_min<<endl;
+
 }
 
 

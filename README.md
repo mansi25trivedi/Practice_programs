@@ -67,4 +67,5 @@ arr2.cpp : 1.
            12. Find the second smallest element in an array.
            13. Check if the array is sorted in ascending order.
            14. Check if the array is sorted in descending order. 
+           15. Count how many pairs of elements have a sum equal to a given number k. 
 

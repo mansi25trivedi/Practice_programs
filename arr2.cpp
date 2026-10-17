@@ -242,6 +242,21 @@ const int MAX_LIMIT = 1000;
     }
     cout<<sum_exp_max_min<<endl;
 
+    //Count how many pairs of elements have a sum equal to a given number k.
+    int k;
+    cout<<endl<<"Enter the sum total you want: ";
+    cin>>k;
+    int pair_count = 0;
+    // Compare every element with every element that comes after it
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] + arr[j] == k) {
+                pair_count++;
+            }
+        }
+    }
+    cout << "Number of pairs that sum to " << k << " is: " << pair_count << "\n";
+
 }
 
 

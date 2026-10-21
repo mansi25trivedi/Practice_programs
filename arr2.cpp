@@ -257,6 +257,15 @@ const int MAX_LIMIT = 1000;
     }
     cout << "Number of pairs that sum to " << k << " is: " << pair_count << "\n";
 
+    //Print all unique elements (those that occur exactly once).
+    cout<<"Print all unique elements (those that occur exactly once). :"<<endl;
+    for(int i = 0 ; i <max_val ;i++){
+            if(freq[i] == 1){
+                cout<<i<<" ";
+            }
+
+    }
+
 }
 
 

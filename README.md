@@ -69,4 +69,8 @@ arr2.cpp : 1.
            14. Check if the array is sorted in descending order. 
            15. Count how many pairs of elements have a sum equal to a given number k. 
            16. Print all unique elements (those that occur exactly once). 
+           17. 
+
+str1.cpp 1.Take a string input and print its length.
+         2. 
 

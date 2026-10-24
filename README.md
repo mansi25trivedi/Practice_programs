@@ -72,5 +72,6 @@ arr2.cpp : 1.
            17. 
 
 str1.cpp 1.Take a string input and print its length.
-         2. 
+         2. Print the first and last character of a string
+         3. 
 

@@ -10,10 +10,24 @@ int main(){
 
     //Print the first and last character of a string
     cout<<endl<<"Print the first character of the string :"<<str1[0]<<" and last character of a string: "<<str1[str1.length() -1]<<endl;
+    //Concatinate 2 strings
     string str2;
     cout<<"enter any string : ";
     cin>>str2;
     cout<<str1<<str2;
+    //Convert all characters of a string to uppercase
+    cout<<endl<<"convert all strig to uppercase: ";
+    int diff = 'a' - 'A'; // This automatically evaluates to 32
+
+    for (int i = 0; i < str1.length(); i++) {
+        if (str1[i] >= 'a' && str1[i] <= 'z') {
+            str1[i] = str1[i] - diff;
+            // Or written directly: s[i] = s[i] - ('a' - 'A');
+        }
+    }
+
+    cout << str1 << "\n";
+
 
 
     return 0;

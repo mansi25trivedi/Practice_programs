@@ -27,6 +27,15 @@ int main(){
     }
 
     cout << str1 << "\n";
+    //Convert all characters of a string to lowercase.
+    cout<<"Convert all characters of a string to lowercase.  : ";
+    int d = 'A' - 'a';
+    for(int i = 0 ; i < str1.length() ; i++){
+        if(str1[i] >='A' && str1[i] <='Z'){
+            str1[i] = str1[i] - d;
+        }
+    }
+    cout<<str1<<endl;
 
 
 

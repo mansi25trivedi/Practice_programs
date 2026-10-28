@@ -36,6 +36,20 @@ int main(){
         }
     }
     cout<<str1<<endl;
+// Check whether the string is empty or not
+int f1 = 1; //is empty true
+for(int i = 0 ; i < str1.length(); i++){
+    if(str1[i] != " "){
+        f1 = 0;  //is empty = false
+        break;
+    }
+}
+if(f1 == 1){
+        cout<<endl<<"it is an empty string"<<endl;
+}else{
+    cout<<endl<<"it is not an empty string"<<endl;
+}
+
 
 
 
